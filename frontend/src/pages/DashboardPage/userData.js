@@ -170,20 +170,26 @@ export const leaderboardFilters = [
   { id: 'year', label: 'Year' },
 ];
 
+export const profileSettings = {
+  name: userData.name,
+  email: userData.email,
+  avatar: userData.avatar,
+  branch: userData.branch,
+  year: userData.year,
+};
+
 export const settingSections = [
   {
     id: 'profile',
     icon: 'user',
     title: 'Profile Settings',
-    description: 'Update your personal information',
-    items: ['Name', 'Email', 'Avatar', 'Branch & Year'],
+    description: 'Update your personal information including name, email, avatar, branch and year',
   },
   {
     id: 'platforms',
     icon: 'link',
     title: 'Connected Platforms',
-    description: 'Manage your coding platform connections',
-    items: ['LeetCode', 'CodeChef', 'Codeforces', 'GeeksForGeeks'],
+    description: 'Manage your coding platform connections for LeetCode, CodeChef, Codeforces, and GeeksForGeeks',
   },
 ];
 
